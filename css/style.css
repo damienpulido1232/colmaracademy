@@ -89,74 +89,65 @@ nav span {
 }
 /*Practicing section*/
 
-#container2{
+.parent {
+  margin-left: 24px;
+  margin-right: none;
+
   padding-left: 24px;
   padding-bottom: 32px;
-
   padding-top: 32px;
   display: flex;
-  flex-direction: column;
-flex-wrap: wrap;
-  border: solid;
-  border-color: red;
+  border: 1px solid red;
 }
-#image2 {
-  margin-left: 24px;
+
+.child{
+  width: 50%;
+  border: 1px solid blue;
   overflow: hidden;
-  height: 200px;
-  width: 200px;
-  flex-direction: column;
 }
-#practice {
-  margin-left: 24px;
+
+
+.child img {
+  width: 100%;
   height: auto;
-  width: auto;
-  flex-direction: column;
-}
-
-#image3 {
-  margin-left: 24px;
+  border: 1px solid green;
   overflow: hidden;
-  height: 200px;
-  width: 200px;
-  flex-direction: column;
+
 }
 
 
+.grandchild{
+  height: 33%;
 
-
-
-#container3 {
-  padding-left: 24px;
-  padding-bottom: 32px;
-
-  padding-top: 32px;
+  border: 1px solid orange;
   display: flex;
-  flex-direction: column;
+}
 
-  border: solid;
-  border-color: red;
+.grandchild img {
+  width: 35%;
+  height: auto;
+
+}
+
+.text p{
+  text-align: left;
+  margin-left: 30px;
 }
 
 
 
 
-
-/*  Section */
-
-.content {
-  margin: auto;
-
-  width: 60%;
+/*start learning Section*/
+#startlearning{
+  text-align: center;
+  background-color: lightgrey;
 }
 
-/* Store Section */
-
-#store {
-  width: 1000px;
-  height: 700px;
-  padding-top: 70px;
-  margin: auto;
+#startlearningcontainer {
+  display: flex;
+  border: 1px solid black;
+  flex-wrap: wrap;
+  background-color: lightgrey;
 }
 
 .item {
@@ -170,49 +161,19 @@ flex-wrap: wrap;
 }
 
 .item span {
+  background-color: white;
   display: block;
   padding: 5px;
   font-weight: bold;
-  text-align: center;
-}
-
-/* Location Section */
-
-.flex-container.locations {
-  padding-top: 5px;
-}
-
-#locations {
-  background-image: url("https://s3.amazonaws.com/codecademy-content/courses/freelance-1/unit-4/img-locations-background.jpg");
-  height: 500px;
-  padding-top: 70px;
-}
-
-#locations .flex-container {
-  margin: auto;
-  width: 1100px;
-}
-
-.location {
-  flex-basis: 280px;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  padding: 10px;
-  margin: 5px 20px;
-  opacity: 1.0;
-  background-color: black;
-}
-
-/* Contact Section */
-
-#contact {
-  height: 200px;
-}
-
-/* Footer Section */
-
-footer {
   text-align: left;
-  padding-left: 20px;
+}
+
+/*thesis Section*/
+
+#thesis {
+  border-color: red;
+}
+
+#video{
+  margin-left: 24px;
 }
